@@ -343,21 +343,19 @@ if __name__ == "__main__":
     try:
         # Click the login link
         login_link = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '/html/body/section/section[2]/section[1]/div[3]/div/form/a'))
+            EC.element_to_be_clickable((By.XPATH, '/html/body/section[1]/div[3]/div[3]/form/a'))
         )
         login_link.click()
 
-        # time.sleep(10)
         # Input Client ID
         client_id_input = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '/html/body/section/section[2]/section[2]/div[3]/div/form/div[1]/input'))
+            EC.element_to_be_clickable((By.XPATH, '/html/body/section[2]/div[3]/div[3]/form/div[1]/input'))
         )
         client_id_input.send_keys(id)
 
-
         # Click Client ID button
         client_id_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '/html/body/section/section[2]/section[2]/div[3]/div/form/button'))
+            EC.element_to_be_clickable((By.XPATH, '/html/body/section[2]/div[3]/div[3]/form/button'))
         )
         client_id_button.click()
 
@@ -414,8 +412,8 @@ if __name__ == "__main__":
     # appIdHash = appIdHash+'KMSCOJRAFH'
 
     session = fyersModel.SessionModel(
-        client_id="9MKDYQFWFB-100",
-        secret_key="SJI15AAODY",
+        client_id="CI-100",
+        secret_key="SK",
         redirect_uri="https://trade.fyers.in/api-login/redirect-uri/index.html",
         response_type="code",
         grant_type="authorization_code",
@@ -429,8 +427,8 @@ if __name__ == "__main__":
     access_token = response['access_token']
     print(access_token)
 
-    obj = websocket(client_id="9MKDYQFWFB-100",
-                    secret_key="SJI15AAODY",
+    obj = websocket(client_id="CI",
+                    secret_key="SK",
                     redirect_uri="https://trade.fyers.in/api-login/redirect-uri/index.html",
                     response_type="code",
                     grant_type="authorization_code",

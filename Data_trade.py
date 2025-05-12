@@ -224,8 +224,8 @@ if __name__ == "__main__":
     # appIdHash = appIdHash+'KMSCOJRAFH'
 
     session = fyersModel.SessionModel(
-        client_id="9MKDYQFWFB-100",
-        secret_key="SJI15AAODY",
+        client_id="CID",
+        secret_key="SK",
         redirect_uri="https://trade.fyers.in/api-login/redirect-uri/index.html",
         response_type="code",
         grant_type="authorization_code",
@@ -238,8 +238,8 @@ if __name__ == "__main__":
     print(access_token)
 
     strike = [21250, 21300, 21350]
-    obj = websocket(client_id="9MKDYQFWFB-100",
-                         secret_key="SJI15AAODY",
+    obj = websocket(client_id="CI",
+                         secret_key="SK",
                          redirect_uri="https://trade.fyers.in/api-login/redirect-uri/index.html",
                          response_type="code",
                          grant_type="authorization_code",
