@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Backtesting/.idea/Backtesting.iml" filepath="$PROJECT_DIR$/../Backtesting/.idea/Backtesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Live-Strategies-.iml" filepath="$PROJECT_DIR$/.idea/Live-Strategies-.iml" />
+    </modules>
+  </component>
+</project>
